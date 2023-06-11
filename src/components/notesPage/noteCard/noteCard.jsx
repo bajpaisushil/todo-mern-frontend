@@ -26,7 +26,6 @@ import {
 
 export default function NoteCard({ title, body, user, _id }) {
   const dispatch = useDispatch();
-  const [notes, setNotes] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [tempTitle, setTitle] = useState(title);
   const [tempBody, setBody] = useState(body);
@@ -40,7 +39,7 @@ export default function NoteCard({ title, body, user, _id }) {
 
   return (
     <Card className="card">
-      <CardBody>
+      <CardBody className="noteCardBody">
         <VStack>
           <Heading>{title}</Heading>
           <Text>{body}</Text>

@@ -4,7 +4,6 @@ import {
     FormControl,
     FormLabel,
     Input,
-    Checkbox,
     Stack,
     Link,
     Button,
@@ -15,10 +14,9 @@ import {
 import React from 'react';
 import loginImage from "../assets/loginImage.png";
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getUser } from '../redux/users/user.actions';
 import { useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../constants/config';
+import "./styles.css";
 
 function SignupPage() {
     const [email, setEmail]=useState("");
@@ -41,9 +39,9 @@ function SignupPage() {
     }
 
   return (
-    <Flex padding={4} w={"100%"}>
-        <Image w={"50%"} src={loginImage}></Image>
-        <VStack w={"50%"}>
+    <Flex className='signupPage' padding={4} w={"100%"}>
+        <Image className='signupPageImage' src={loginImage}></Image>
+        <VStack className='signupPageDiv'>
         <Flex
       minH={'100vh'}
       align={'center'}
@@ -94,8 +92,8 @@ function SignupPage() {
         </Box>
       </Stack>
     </Flex>
-        </VStack>
-    </Flex>
+    </VStack>
+  </Flex>
   )
 }
 

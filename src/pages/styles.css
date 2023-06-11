@@ -1,0 +1,61 @@
+
+.homePageText{
+    max-width: 50%;
+}
+.loginPageImage{
+    max-width: 50%;
+}
+.loginPageDiv{
+    max-width: 50%;
+}
+.signupPageImage{
+    max-width: 50%;
+}
+.signupPageDiv{
+    max-width: 50%;
+}
+.noteCardGroup{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 900px) {
+    .homePage{
+        display: flex;
+        flex-direction: row;
+    }
+    .homePageImage{
+        display: none;
+    }
+    .homePageHeading{
+        position: relative;
+        font-size: 1.5rem;
+    }
+    .homePageText{
+        max-width: 100%;
+    }
+    .loginPage{
+        display: flex;
+        flex-direction: column;
+    }
+    .loginPageImage{
+        max-width: 90%;
+    }
+    .loginPageDiv{
+        max-width: 100%;
+    }
+
+    .signupPage{
+        display: flex;
+        flex-direction: column;
+    }
+    .signupPageImage{
+        max-width: 90%;
+    }
+    .signupPageDiv{
+        max-width: 100%;
+    }
+
+    .noteCardGroup{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

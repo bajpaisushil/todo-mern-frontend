@@ -2,15 +2,16 @@ import React from "react";
 import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import { Navbar } from "../components/homePage/navbar";
 import note from "../assets/note.png";
+import "./styles.css";
 
 const HomePage = () => {
   return (
     <Box padding={8}>
-      <Image position={"absolute"} right={0} w={500} src={note} />
+      <Image className="homePageImage" position={"absolute"} right={0} w={500} src={note} />
       <Heading mt={16} textAlign={"start"} size={"3xl"}>
         Todo App
       </Heading>
-      <Text mt={8} maxW={"50%"} textAlign={"justify"}>
+      <Text className="homePageText" mt={8} textAlign={"justify"}>
         Introducing our innovative note application, designed to revolutionize
         the way you capture, organize, and manage your notes. With its powerful
         features and intuitive interface, our note application is the ultimate

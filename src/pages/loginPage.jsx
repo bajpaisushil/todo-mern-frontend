@@ -17,6 +17,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUser } from '../redux/users/user.actions';
 import { useNavigate } from 'react-router-dom';
+import "./styles.css";
 
 function LoginPage() {
     const {auth, token, loading, error}=useSelector((state)=> state.userReducer)
@@ -34,9 +35,9 @@ function LoginPage() {
     }
 
   return (
-    <Flex padding={4} w={"100%"}>
-        <Image w={"50%"} src={loginImage}></Image>
-        <VStack w={"50%"}>
+    <Flex className='loginPage' padding={4} w={"100%"}>
+        <Image className='loginPageImage' src={loginImage}></Image>
+        <VStack className='loginPageDiv'>
         <Flex
       minH={'100vh'}
       align={'center'}
