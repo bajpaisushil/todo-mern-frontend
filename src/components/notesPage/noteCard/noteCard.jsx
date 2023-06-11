@@ -11,7 +11,6 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import "./style.css";
-import notebg from "../../../assets/noteCard.png";
 import { deleteNotes, updateNotes } from "../../../redux/notes/note.actions";
 import { useDispatch } from "react-redux";
 import React, { useState } from "react";
